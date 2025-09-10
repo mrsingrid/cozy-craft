@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+@import "material-icons/iconfont/material-icons.css";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.5;
+  margin: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: #333;
+  span {
+    font-size: 1rem;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.md-18 {
+  font-size: 1.125rem;
+}
