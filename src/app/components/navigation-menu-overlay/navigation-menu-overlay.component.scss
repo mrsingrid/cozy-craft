@@ -40,3 +40,10 @@
     font-weight: 500;
   }
 }
+
+@media (min-width: 1024px) {
+  .navigation-menu-overlay {
+    width: 25rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+}
