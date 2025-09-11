@@ -1,0 +1,18 @@
+<div
+  class="navigation-menu-overlay"
+  [ngClass]="{
+    'navigation-menu-overlay--visible': isMenuOpen(),
+    'navigation-menu-overlay--hidden': !isMenuOpen()
+  }"
+>
+  <button class="navigation-menu-overlay__button" (click)="closeMenu()">
+    <span class="material-icons-outlined md-32">close</span>
+  </button>
+
+  <nav class="navigation-menu-overlay__nav">
+    <a class="navigation-menu-overlay__item">Clothes</a>
+    <a class="navigation-menu-overlay__item">Accessories</a>
+    <a class="navigation-menu-overlay__item">Decoration</a>
+    <a class="navigation-menu-overlay__item">Amigurumis</a>
+  </nav>
+</div>

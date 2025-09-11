@@ -18,7 +18,6 @@ body {
   background-color: #fff;
   color: #333;
   line-height: 1.5;
-  margin: 50px;
 }
 
 a {
@@ -38,6 +37,7 @@ ol {
 }
 
 button {
+  width: fit-content;
   border: none;
   background: none;
   cursor: pointer;
@@ -54,4 +54,12 @@ button {
 
 .md-18 {
   font-size: 1.125rem;
+}
+
+.md-32 {
+  font-size: 2rem;
+}
+
+.md-48 {
+  font-size: 3rem;
 }
