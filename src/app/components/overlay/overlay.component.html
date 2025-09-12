@@ -1,0 +1,15 @@
+<div
+  class="overlay"
+  [ngClass]="{
+    'overlay--visible': isOpen(),
+    'overlay--hidden': !isOpen(),
+    'overlay--left': position() === 'left',
+    'overlay--right': position() === 'right'
+  }"
+>
+  <button class="overlay__button" (click)="close()">
+    <span class="material-icons-outlined md-32">close</span>
+  </button>
+
+  <ng-content></ng-content>
+</div>
