@@ -10,7 +10,7 @@ import { Component, output } from '@angular/core';
 export class NavigationMenuComponent {
   categorySelected = output<string>();
 
-  selectCategory(category: string) {
+  emitCategorySelected(category: string) {
     this.categorySelected.emit(category);
   }
 }
