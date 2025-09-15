@@ -18,4 +18,13 @@ describe('NavigationMenuOverlayComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should emit categorySelected when the category is clicked', () => {
+    const spy = spyOn(component.categorySelected, 'emit');
+    const button = fixture.nativeElement.querySelector(
+      '.navigation-menu-overlay__item'
+    );
+    button.click();
+    expect(spy).toHaveBeenCalled();
+  });
 });
