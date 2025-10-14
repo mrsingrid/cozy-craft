@@ -1,0 +1,27 @@
+<header class="header">
+  <button>
+    <span class="material-icons-outlined md-32" (click)="openOverlay('menu')"
+      >menu</span
+    >
+  </button>
+
+  <h1 class="header__title">CozyCraft</h1>
+
+  <button>
+    <span class="material-icons-outlined md-32" (click)="openOverlay('cart')"
+      >shopping_bag</span
+    >
+  </button>
+</header>
+
+<app-overlay [isOpen]="currentOverlay() === 'menu'" (closed)="closeOverlay()">
+  <app-navigation-menu (categorySelected)="onCategorySelected($event)" />
+</app-overlay>
+
+<app-overlay
+  position="right"
+  [isOpen]="currentOverlay() === 'cart'"
+  (closed)="closeOverlay()"
+>
+  <app-cart (chooseProducts)="onChooseProducts()" />
+</app-overlay>
