@@ -3,8 +3,9 @@ import { ProductsComponent } from './pages/products/products.component';
 
 export const routes: Routes = [
   {
-    path: 'products',
-    component: ProductsComponent,
+    path: '',
+    redirectTo: 'products/all',
+    pathMatch: 'full',
   },
   {
     path: 'products/:categorySlug',

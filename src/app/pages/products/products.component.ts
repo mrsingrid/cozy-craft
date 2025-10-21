@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { ProductCardComponent } from '../../components/product-card/product-card.component';
 
 @Component({
@@ -7,4 +7,6 @@ import { ProductCardComponent } from '../../components/product-card/product-card
   templateUrl: './products.component.html',
   styleUrl: './products.component.scss',
 })
-export class ProductsComponent {}
+export class ProductsComponent {
+  categorySlug = input.required<string>();
+}
