@@ -41,6 +41,10 @@
   }
 }
 
+.navigation-menu-overlay__item--active {
+  font-weight: 500;
+}
+
 @media (min-width: 1024px) {
   .navigation-menu-overlay {
     width: 25rem;

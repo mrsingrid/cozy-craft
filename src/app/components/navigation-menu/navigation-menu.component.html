@@ -1,22 +1,34 @@
 <nav class="navigation-menu-overlay__nav">
   <a
+    routerLink="/products"
+    routerLinkActive="navigation-menu-overlay__item--active"
     class="navigation-menu-overlay__item"
-    (click)="emitCategorySelected('Clothes')"
+    (click)="emitCategorySelected()"
+    >All Products</a
+  >
+  <a
+    routerLink="/products/clothes"
+    class="navigation-menu-overlay__item"
+    (click)="emitCategorySelected()"
+    routerLinkActive="navigation-menu-overlay__item--active"
     >Clothes</a
   >
   <a
+    routerLink="/products/accessories"
     class="navigation-menu-overlay__item"
-    (click)="emitCategorySelected('Accessories')"
+    (click)="emitCategorySelected()"
     >Accessories</a
   >
   <a
+    routerLink="/products/decoration"
     class="navigation-menu-overlay__item"
-    (click)="emitCategorySelected('Decoration')"
+    (click)="emitCategorySelected()"
     >Decoration</a
   >
   <a
+    routerLink="/products/amigurumis"
     class="navigation-menu-overlay__item"
-    (click)="emitCategorySelected('Amigurumis')"
+    (click)="emitCategorySelected()"
     >Amigurumis</a
   >
 </nav>

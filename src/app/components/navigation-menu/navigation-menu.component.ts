@@ -1,16 +1,17 @@
 import { CommonModule } from '@angular/common';
 import { Component, output } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-navigation-menu',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink, RouterLinkActive],
   templateUrl: './navigation-menu.component.html',
   styleUrl: './navigation-menu.component.scss',
 })
 export class NavigationMenuComponent {
-  categorySelected = output<string>();
+  categorySelected = output<void>();
 
-  emitCategorySelected(category: string) {
-    this.categorySelected.emit(category);
+  emitCategorySelected() {
+    this.categorySelected.emit();
   }
 }

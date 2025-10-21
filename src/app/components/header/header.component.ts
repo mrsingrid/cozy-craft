@@ -27,14 +27,4 @@ export class HeaderComponent {
   closeOverlay() {
     this.currentOverlay.set(null);
   }
-
-  onCategorySelected(category: string) {
-    this.closeOverlay();
-    console.log(`category`, category);
-  }
-
-  onChooseProducts() {
-    this.closeOverlay();
-    console.log('redireciona para home');
-  }
 }

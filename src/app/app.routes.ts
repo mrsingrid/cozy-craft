@@ -3,7 +3,11 @@ import { ProductsComponent } from './pages/products/products.component';
 
 export const routes: Routes = [
   {
-    path: '',
+    path: 'products',
+    component: ProductsComponent,
+  },
+  {
+    path: 'products/:categorySlug',
     component: ProductsComponent,
   },
 ];

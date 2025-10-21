@@ -15,7 +15,7 @@
 </header>
 
 <app-overlay [isOpen]="currentOverlay() === 'menu'" (closed)="closeOverlay()">
-  <app-navigation-menu (categorySelected)="onCategorySelected($event)" />
+  <app-navigation-menu (categorySelected)="closeOverlay()" />
 </app-overlay>
 
 <app-overlay
@@ -23,5 +23,5 @@
   [isOpen]="currentOverlay() === 'cart'"
   (closed)="closeOverlay()"
 >
-  <app-cart (chooseProducts)="onChooseProducts()" />
+  <app-cart (chooseProducts)="closeOverlay()" />
 </app-overlay>
